@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 <body>
     <!--navbar-->
-    <nav id="navbar" class="navbar navbar-dark bg-dark px-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
+    <!--<nav id="navbar" class="navbar navbar-dark bg-dark px-3">
+      <div class="row">
+        <div class="logo"><h1><a class="navbar-brand" href="#">Navbar</a></h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+        <li><a class="nav-link" href="#pwdgen">Generator</a></li>
+        <li><a class="nav-link" href="#pwdsend">Saver</a></li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+      </ul>
+      </div>
+    </nav>-->
+    <nav>
+        <a>Navbar</a>
+        <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#pwdgen">Generator</a>
+            <a href="#pwdgen">Generator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pwdsave">Saver</a>
+            <a href="#pwdsend">Saver</a>
           </li>
         </ul>
     </nav>
@@ -28,9 +40,9 @@
             <h2>Password Generator</h2>
             <input type="text" placeholder="Password" name="" id="password" readonly="">
     
-            <button id="btn" onclick="getPassword()">Generate</button>
+            <button id="btn" onclick="getPassword()">Create</button>
         </div>
-        <div class="container column border pwdsave" id="pwdsave">
+        <div class="container column border pwdsend" id="pwdsend">
             <h2>Password Saver</h2>
             <input type="text" placeholder="Enter the website" name="" id="site">
             <input type="text" placeholder="Enter Username" name="" id="username">
@@ -44,6 +56,5 @@
             <div id="history"></div>
         </div>
     </div>
-    
 </body>
 </html>
