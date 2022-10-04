@@ -10,7 +10,7 @@
   nav {
     background: #000;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     font-size: xx-large;
     text-decoration: none;
     text-transform: uppercase;
@@ -22,7 +22,7 @@
   nav a:hover{
     cursor: pointer;
   }
-  nav li a {
+  nav ul li a {
     text-decoration: none;
     text-transform: none;
     color: #fff;
@@ -61,6 +61,22 @@
     width:100%;
     margin: 3px;
     border-radius: 5px;
+  }
+
+  footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: small;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  footer a {
+    text-decoration: none;
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
