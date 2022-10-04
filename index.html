@@ -11,18 +11,6 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <!--navbar-->
-    <!--<nav id="navbar" class="navbar navbar-dark bg-dark px-3">
-      <div class="row">
-        <div class="logo"><h1><a class="navbar-brand" href="#">Navbar</a></h1></div>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
-        <ul class="mainMenu">
-        <li><a class="nav-link" href="#pwdgen">Generator</a></li>
-        <li><a class="nav-link" href="#pwdsend">Saver</a></li>
-        <div class="closeMenu"><i class="fa fa-times"></i></div>
-      </ul>
-      </div>
-    </nav>-->
     <nav>
         <a>Navbar</a>
         <ul class="nav">
@@ -43,18 +31,23 @@
             <button id="btn" onclick="getPassword()">Create</button>
         </div>
         <div class="container column border pwdsend" id="pwdsend">
+          <form autocomplete="off" method="post" name="google-sheet">
             <h2>Password Saver</h2>
-            <input type="text" placeholder="Enter the website" name="" id="site">
-            <input type="text" placeholder="Enter Username" name="" id="username">
-            <input type="text" placeholder="Enter Password" name="" id="password" required>
-            <input type="email" placeholder="Enter email" name="" id="email">
-            <input type="text" placeholder="Write about it !" name="" id="">
-            <button id="btn">Save</button>
+            <input type="text" placeholder="Enter the website" name="Website" id="site">
+            <input type="text" placeholder="Enter Username" name="Username" id="username">
+            <input type="text" placeholder="Enter Password" name="Password" id="password" required>
+            <input type="email" placeholder="Enter email" name="Email" id="email">
+            <input type="textarea" rows="3" placeholder="Write about it !" name="Description" id="description">
+            <button id="btn" type="submit" name="submit">Save</button>
             <br>
             <b>Prevoiusly generated passwords</b>
             <br>
             <div id="history"></div>
+          </form>
         </div>
     </div>
+    <footer>
+      <span>Created By <a href="https://www.linkedin.com/in/dipam-bhuyan">Dipam Bhuyan</a> | &copy 2021 All rights reserved.</span>
+    </footer>
 </body>
 </html>
