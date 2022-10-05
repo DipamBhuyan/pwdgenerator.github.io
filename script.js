@@ -16,12 +16,6 @@ function getPassword() {
     document.getElementById("history").innerHTML += password + "<br />";
 }
 
-//add the default date
-function getDate(){
-    var today = new Date();
-
-    document.getElementById("date").value = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
-}
 
 //send the password through email
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzBoAgAyWLCTUPBNfMXv9Ufd3ijOER0Szc2Gq02lDs-OlRn3AgrH9qshwdcoExnesxEGg/exec'
