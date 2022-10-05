@@ -11,7 +11,7 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <nav>
+    <nav class="circle">
         <a>Navbar</a>
         <ul class="nav">
           <li class="nav-item">
@@ -26,21 +26,21 @@
     <div class="row">
         <div class="container column border pwdgen" id="pwdgen">
             <h2>Password Generator</h2>
-            <input type="text" placeholder="Password" name="" id="password" readonly="">
+            <input type="text" placeholder="  Password" name="" id="password" readonly="">
     
             <button id="btn" onclick="getPassword()">Create</button>
         </div>
         <div class="container column border pwdsend" id="pwdsend">
           <form autocomplete="off" method="post" name="google-sheet">
             <h2>Password Saver</h2>
-            <input type="text" placeholder="Enter the website" name="Website" id="site">
-            <input type="text" placeholder="Enter Username" name="Username" id="username">
-            <input type="text" placeholder="Enter Password" name="Password" id="password" required>
-            <input type="email" placeholder="Enter email" name="Email" id="email">
-            <input type="textarea" rows="3" placeholder="Write about it !" name="Description" id="description">
+            <input type="text" placeholder="  Enter the website" name="Website" id="site">
+            <input type="text" placeholder="  Enter Username" name="Username" id="username">
+            <input type="text" placeholder="  Enter Password" name="Password" id="password" required>
+            <input type="email" placeholder="  Enter email" name="Email" id="email">
+            <input type="textarea" rows="3" placeholder="  Write about it !" name="Description" id="description">
             <button id="btn" type="submit" name="submit">Save</button>
-            <br>
-            <b>Prevoiusly generated passwords</b>
+            <br><br>
+            <b>Previously generated passwords</b>
             <br>
             <div id="history"></div>
           </form>
