@@ -6,9 +6,7 @@
   
   body {
   font-family: Arial, Helvetica, sans-serif;
-  /*background: url(./1.jpg);
-  background-position: center;
-  background-size: cover;*/
+  font-size: ;
   }
 
   .bg {
@@ -111,6 +109,7 @@
     transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
   }
   nav ul li a:hover{
+    text-decoration: none;
     cursor: pointer;
     color: #000;
     box-shadow: inset 200px 0 0 0 rgb(255, 255, 255, 0.9);
@@ -134,7 +133,7 @@
   #pwdgen {
     height: 35%;
   }
-
+  
   #btn {
     margin: 3px;
     width: 120px;
@@ -156,6 +155,7 @@
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 0;
   }
 
@@ -171,17 +171,14 @@
       padding: 0;
     }
 
-    /**start**/
+  /**start**/
   nav {
-    height: 5vh;
-    padding: 0 0 0 8px;
-    font-size: 17px;
+    height: 7vh;
+    padding: 0 0 0 12px;
+    font-size: x-large;
   }
   nav ul li a {
-    color: #fff;
-    font-size: 12px;
-    padding: 5px 5px 5px 10px;
-    box-shadow: inset 0 0 0 0 #fff;
+    margin-top: -100%;
   }
   /*End navbar*/
 
